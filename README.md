@@ -95,7 +95,7 @@ While I play LongVinter I found something that make me fourious, fishing. At fir
 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-* [![Python][Python]][Python-url]
+* [!][Python][Python][Python-url]
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -115,6 +115,7 @@ to run this with the .py
   pip install keyboard
   pip install rich
   pip install pygame
+  pip install opencv-python
   ```
 
 ### Installation
