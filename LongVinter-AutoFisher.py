@@ -40,16 +40,6 @@ def title(run):
 
     run = 1
 
-def waitUntilp():
-
-    if keyboard.is_pressed('F6'):
-
-        return pyautogui.position()
-
-    else:
-
-        waitUntilp()
-
 def fishing():
 
     global running
@@ -64,8 +54,8 @@ def fishing():
             if keyboard.is_pressed('F5'):
 
                 title(2)
-                print('You stopped the script!')
-                pos = waitUntilp()
+                print('Program paused')
+                keyboard.wait("F6")
                 time.sleep(3)
 
             else:
@@ -78,7 +68,7 @@ def fishing():
                     time.sleep(2)
                     beep.play()
 
-                    pos = waitUntilp()
+                    keyboard.wait("F6")
 
                     time.sleep(3)
 
