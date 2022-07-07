@@ -37,7 +37,7 @@
   <h3 align="center">LongVinter AutoFisher</h3>
 
   <p align="center">
-    An autofisher for longvinter so you can do workout while fishing
+    An auto fishing for longvinter so you can do workout while fishing
     <br />
     <a href="https://github.com/ariqpradipa/longvinter-autofisher/blob/main/README.md"><strong>Explore the docs »</strong></a>
     <br />
