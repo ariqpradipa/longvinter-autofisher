@@ -8,6 +8,9 @@ from pygame import mixer
 
 mixer.init() 
 beep = mixer.Sound("beep.wav")
+boop = mixer.Sound("full.wav")
+
+pos = pyautogui.position()
 
 def print_msg_box(msg, indent=1, width=None, title=None):
 
@@ -56,6 +59,7 @@ def fishing():
                 title(2)
                 print('Program paused')
                 keyboard.wait("F6")
+                pos = pyautogui.position()
                 time.sleep(3)
 
             else:
@@ -69,6 +73,19 @@ def fishing():
                     beep.play()
 
                     keyboard.wait("F6")
+                    pos = pyautogui.position()
+
+                    time.sleep(3)
+
+                elif pyautogui.locateOnScreen('inv.png', region=(29, 59, 179, 90), confidence=0.9) != None:
+                    title(2)
+                    rprint('Inventory Full')
+                    boop.play()
+                    time.sleep(2)
+                    boop.play()
+
+                    keyboard.wait("F6")
+                    pos = pyautogui.position()
 
                     time.sleep(3)
 
@@ -84,6 +101,7 @@ def fishing():
 if __name__ == "__main__":
 
     title(1)
+    
 
     while True:
 
