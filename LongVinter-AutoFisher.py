@@ -77,7 +77,7 @@ def fishing():
 
                     time.sleep(3)
 
-                elif pyautogui.locateOnScreen('inv.png', region=(29, 59, 179, 90), confidence=0.9) != None:
+                elif pyautogui.locateOnScreen('inv.png', region=(29, 59, 179, 90), confidence=0.82) != None:
                     title(2)
                     rprint('Inventory Full')
                     boop.play()
