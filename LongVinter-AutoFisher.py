@@ -91,9 +91,11 @@ def fishing():
 
                 else:
 
-                    pyautogui.press('e')
                     print(pyautogui.click())
-                    pyautogui.press('e')
+                    for i in range(15):
+                        pyautogui.press('e')
+                    time.sleep(0.5)
+                    
     else:
         pass
 
